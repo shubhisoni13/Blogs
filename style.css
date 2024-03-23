@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bodycontainer {
+  background: #feac5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4bc0c8,
+    #c779d0,
+    #feac5e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4bc0c8,
+    #c779d0,
+    #feac5e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container {
+  max-width: 75vw;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+}
+.headertitle {
+  text-decoration: underline;
+  color: white;
+
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  line-height: 3rem;
+  font-weight: 700px;
+  text-align: center;
+  font-style: oblique;
+}
+.headerdesc {
+  font-weight: 800;
+  text-align: center;
+  font-size: larger;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 2rem;
+  font-style: oblique;
+  color: white;
+}
+.maincontainer {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.cardcontainer {
+  background: rgb(237, 211, 169);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.cardcontainer:hover .cardimage {
+  transform: scale(1.1);
+  transition-duration: 200ms;
+}
+
+.cardimagecontainer {
+  position: relative;
+  overflow: hidden;
+  height: 14rem;
+}
+
+.cardimage {
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.cardtitlecontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.cardtitleanchor {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: black;
+  margin-bottom: 0.4rem;
+  text-decoration: none;
+}
+.cardtitleanchor:hover {
+  color: rgb(114, 20, 114);
+}
+.carddesc {
+  color: black;
+  font-size: 1rem;
+}
+.cardfootercontainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.authorcontainer {
+  display: flex;
+  align-items: space-between;
+  flex-direction: row;
+  gap: 1rem;
+}
+.authoravtarcontainer .authoravtar {
+  height: 2.5rem;
+  width: 2.5rem;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: black;
+}
+.authorinfocontainer {
+  display: flex;
+  flex-direction: column;
+}
+.authorname {
+  color: solid black;
+}
+.authordate {
+  color: black;
+}
+.cardtagcontainer {
+  font-size: 0.8rem;
+  border: 1px solid black;
+  line-height: 1.3rem;
+  padding: 0.25rem 0.5rem;
+  color: black;
+  justify-content: left;
+}
